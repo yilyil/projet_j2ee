@@ -1,1 +1,3 @@
-# projet_j2ee
+# maven-project
+
+Simple Maven Project
