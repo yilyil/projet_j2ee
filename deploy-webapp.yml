@@ -1,6 +1,6 @@
 ---
 - name: Déployer webapp.war sur le serveur distant
-  hosts: serveur_distant
+  hosts: serveur_Tomcat
   become: yes
   tasks:
     - name: Copier le fichier .war vers le serveur distant
