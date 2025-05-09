@@ -11,7 +11,6 @@ echo "Voici l'URL pour acceder a votre java web application en local: http://$va
 # Vérification si l'application répond
 curl http://$var4:8080/webapp
 
-
 ###########################################################
 ###################### FIN DU SCRIPT ######################
 ###########################################################
