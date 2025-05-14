@@ -1,7 +1,7 @@
 node {
   
     stage('Clone') {
-        git credentialsId: 'jenkins', url: 'git@gitlab.com:f4045/projet_j2ee.git'
+        git credentialsId: 'jenkins', url: 'git@gihub.com:abdelbaki-bouzaienne/projet_j2ee.git'
 
     }
     stage('SonarQube analysis') {
