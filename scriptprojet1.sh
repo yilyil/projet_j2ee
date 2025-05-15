@@ -52,22 +52,22 @@ echo "JAVA_HOME:$JAVA_HOME"
 
 # === ETAPE 04 : Installation de Tomcat  ===
 cd /tmp
-wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.100/bin/apache-tomcat-9.0.100.tar.gz
+wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.105/bin/apache-tomcat-9.0.105.tar.gz
 
-sha512sum apache-tomcat-9.0.100.tar.gz
+sha512sum apache-tomcat-9.0.105.tar.gz
 
-# Téléchargement de Tomcat version 9.0.100 et vérification de l'intégrité du fichier téléchargé en utilisant la somme de contrôle SHA512
+# Téléchargement de Tomcat version 9.0.105 et vérification de l'intégrité du fichier téléchargé en utilisant la somme de contrôle SHA512
 
-#unzip apache-tomcat-9.0.100.zip
-tar -xvzf apache-tomcat-9.0.100.tar.gz
+#unzip apache-tomcat-9.0.105.zip
+tar -xvzf apache-tomcat-9.0.105.tar.gz
 # Décompression de l’archive
 
 mkdir -p /opt/tomcat
-mv apache-tomcat-9.0.100 /opt/tomcat
+mv apache-tomcat-9.0.105 /opt/tomcat
 # Déplacement du dossier Tomcat vers /opt/tomcat
 
 rm -rf /opt/tomcat/latest
-ln -s /opt/tomcat/apache-tomcat-9.0.100 /opt/tomcat/latest
+ln -s /opt/tomcat/apache-tomcat-9.0.105 /opt/tomcat/latest
 # Création d’un lien symbolique "latest" pour toujours pointer vers la version courante
 
 sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh'
